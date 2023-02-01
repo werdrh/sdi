@@ -1,3 +1,181 @@
-//====================================================================================================
+.footer {
+  background-color: #192032;
+  padding: 50px 0 75px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    font-family: IBM Plex Sans Condensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
 
-//====================================================================================================
+  &__left {
+    max-width: 543px;
+  }
+
+  &__left-logo {
+    margin-bottom: 23px;
+  }
+
+  &__left-logo-link {
+    &:hover {
+      .footer__left-logo-img {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &__left-logo-img {
+    max-width: 278px;
+    max-height: 118px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+
+  &__left-text {
+    margin-bottom: 18px;
+  }
+
+  &__left-partners {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__right {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__right-contacts {
+  }
+
+  &__right-title {
+    font-family: "IBM Plex Sans Condensed";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__right-menu {
+  }
+
+  &__right-social {
+  }
+}
+.partners-list {
+  &__item {
+  }
+
+  &__item-link {
+    &:hover {
+      .partners-list__item-img {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &__item-img {
+    max-width: 174px;
+    max-height: 76px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.footer-contacts {
+
+  &__top {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-style: normal;
+  }
+
+  &__top-address {
+  }
+
+  &__top-phone {
+    transition: all 0.4s ease;
+  
+    &:hover{
+        color: #1549cd;
+        transform: scale(1.02);
+    }
+  }
+
+  &__top-mail {
+    color: #1549cd;
+    transition: all 0.4s ease;
+  
+    &:hover{
+        color: #fff;
+        transform: scale(1.02);
+    }
+  }
+
+  &__bottom {
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #1549cd;
+    transition: all 0.4s ease;
+  
+    &:hover{
+        color: #fff;
+        transform: scale(1.02);
+    }
+  }
+}
+.footer-menu {
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 13px;
+  }
+
+  &__link {
+    transition: all 0.4s ease;
+    display: inline-block;
+  
+    &:hover{
+        color: #1549cd;
+        transform: scale(1.2);
+    }
+  }
+}
+.footer-social {
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 13px;
+   
+  }
+
+  &__link {
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+  
+    &:hover{
+        color: #1549cd;
+        transform: scale(1.2);
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+}
